@@ -19,6 +19,10 @@ const upload = multer({
 })
 
 
+router.get("/", async(req, res)=>{
+    res.send("Thanks for your response!")
+})
+
 
 router.post('/users', async (req, res) => {
     const user = new User(req.body);
